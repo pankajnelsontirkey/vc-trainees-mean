@@ -1,5 +1,12 @@
 # VcTraineesMean
 
+This project was created by:
+Apoorva Singh
+Himanshu Chaddha
+Pankaj Nelson Tirkey
+Randhir Sah
+Sandeep Sarswat
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
 ## Development server
