@@ -12,6 +12,6 @@ export class AppComponent {
     { name: "Himanshu Chaddha", id: 2, attendance: "Present" },
     { name: "Pankaj Nelson Tirkey", id: 3, attendance: "Present" },
     { name: "Randhir Sah", id: 4, attendance: "" },
-    { name: "Sandeep Sarswat", id: 5, attendance: "" }
+    { name: "Sandeep Sarswat", id: 5, attendance: "Present" }
   ];
 }
