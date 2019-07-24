@@ -11,7 +11,7 @@ export class AppComponent {
     { name: "Apoorva Singh", id: 1, attendance: "Present" },
     { name: "Himanshu Chaddha", id: 2, attendance: "Present" },
     { name: "Pankaj Nelson Tirkey", id: 3, attendance: "Present" },
-    { name: "Randhir Sah", id: 4, attendance: "" },
+    { name: "Randhir Sah", id: 4, attendance: "Present" },
     { name: "Sandeep Sarswat", id: 5, attendance: "Present" }
   ];
 }
