@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -9,8 +10,8 @@ import { EventsComponent } from "./dashboard/events/events.component";
 import { ProfileComponent } from "./dashboard/profile/profile.component";
 import { OrdersComponent } from "./dashboard/orders/orders.component";
 import { RegisterComponent } from "./register/register.component";
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
-// import { ProfileComponent } from './profile/profile.component';
+
+// import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { ReactiveFormsModule, FormsModule } from "@angular/forms";
     ProfileComponent,
     OrdersComponent,
     RegisterComponent
-    // ProfileComponent
+    // OrderComponent
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
