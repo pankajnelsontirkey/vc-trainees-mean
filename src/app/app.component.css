@@ -1,9 +1,22 @@
-.header {
-  display: block;
-  border: 2px solid black;
+h3{
+  border-bottom: 2px solid darkslategray;
+  /* padding-left: 10px; */
+  /* padding-top: 0px; */
+  padding: 0px 0px 10px 10px;
+  text-align: center;
 }
-
 .trainee-list {
-  display: block;
-  border: 0.5px solid black;
+  padding: 10px;
+  text-decoration:inherit;
+  border-top: 2px solid darkslategray;
+}
+.card{
+  border: 2px solid darkslategray;
+  margin-top: 20px; 
+}
+.header{
+  font-weight: 700;
+  padding: 10px;
+  text-transform: uppercase;
+
 }
