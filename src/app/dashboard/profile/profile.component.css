@@ -1,0 +1,16 @@
+.card{
+    border: 2px solid darkslategray;
+    margin-top: 20px; 
+}
+.card-header{
+    font-weight: 800;
+    border-bottom: 2px solid darkslategray; 
+    padding-left: 10px;
+    padding-top:0px; 
+    font-size: 20px;
+    text-align: center;
+
+}
+.card-body{
+    padding: 10px;
+}

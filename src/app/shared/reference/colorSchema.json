@@ -1,0 +1,30 @@
+{
+  "primary": {
+    "base": "#27586b",
+    "lighter": "#6d92a0",
+    "light": "#457485",
+    "dark": "#103e50",
+    "darker": "#022735"
+  },
+  "secondary1": {
+    "base": "#297b48",
+    "lighter": "#7bb992",
+    "light": "#4d9a6a",
+    "dark": "#0f5d2c",
+    "darker": "#003e17"
+  },
+  "secondary2": {
+    "base": "#313b74",
+    "lighter": "#7c84ae",
+    "light": "#525c91",
+    "dark": "#182257",
+    "darker": "#070f3a"
+  },
+  "complementary": {
+    "base": "#aa7439",
+    "lighter": "#ffd6aa",
+    "light": "#d4a26a",
+    "dark": "#804d15",
+    "darker": "#552c00"
+  }
+}
