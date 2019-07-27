@@ -1,13 +1,17 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { EventsComponent } from "./events/events.component";
-import { EventComponent } from "./events/event/event.component";
-import { EventDetailComponent } from "./events/event/event-detail/event-detail.component";
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
-import { ProfileComponent } from "./profile/profile.component";
+import { HomeComponent } from "./home/home.component";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { ProfileComponent } from "./dashboard/profile/profile.component";
+import { EventsComponent } from "./dashboard/events/events.component";
+import { EventComponent } from "./dashboard/events/event/event.component";
+import { EventDetailComponent } from "./dashboard/events/event/event-detail/event-detail.component";
+import { OrdersComponent } from "./dashboard/orders/orders.component";
+import { RegisterComponent } from "./register/register.component";
 
 @NgModule({
   declarations: [
@@ -15,7 +19,13 @@ import { ProfileComponent } from "./profile/profile.component";
     EventsComponent,
     EventComponent,
     EventDetailComponent,
-    ProfileComponent
+    ProfileComponent,
+    HomeComponent,
+    DashboardComponent,
+    EventsComponent,
+    ProfileComponent,
+    OrdersComponent,
+    RegisterComponent
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
