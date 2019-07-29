@@ -1,15 +1,13 @@
 import { Component, OnInit } from "@angular/core";
-import { ApiServiceService } from "./../api-service.service";
+import { ApiServiceService } from "../../api-service.service";
 
 @Component({
-  selector: "app-dashboard",
-  templateUrl: "./dashboard.component.html",
-  styleUrls: ["./dashboard.component.css"]
+  selector: "app-content",
+  templateUrl: "./content.component.html",
+  styleUrls: ["./content.component.css"]
 })
-export class DashboardComponent implements OnInit {
-  //events:any;
-  collapsed: boolean = false;
-  events: [];
+export class ContentComponent implements OnInit {
+  events: any;
   constructor(private api: ApiServiceService) {
     this.api.listOfEvents().subscribe(
       data => {
