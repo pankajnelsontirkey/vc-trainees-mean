@@ -1,0 +1,16 @@
+h1{
+  text-align: center;
+  color: blue;
+  font-size: 100px;
+  font-family: 'Anton', sans-serif;
+} 
+
+#b{
+  margin: auto;
+  top:50%;
+  left:50%;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+
+}
