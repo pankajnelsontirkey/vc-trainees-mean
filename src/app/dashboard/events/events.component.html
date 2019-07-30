@@ -1,2 +1,17 @@
-<p>events works!</p>
-<router-outlet></router-outlet>
+<div class="container eventsContainer">
+  <div class="row eventsHeading">
+    <h1>Events</h1>
+  </div>
+  <div class="row eventsListContainer">
+    <div class="container">
+      <ul>
+        <li
+          *ngFor="let item of eventList"
+          class="eventItem col-xs-12 col-sm-6 col-md-4 col-lg-3"
+        >
+          <app-event [eventItem]="item"></app-event>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
