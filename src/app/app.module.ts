@@ -12,6 +12,8 @@ import { EventComponent } from "./dashboard/events/event/event.component";
 import { EventDetailComponent } from "./dashboard/events/event/event-detail/event-detail.component";
 import { OrdersComponent } from "./dashboard/orders/orders.component";
 import { RegisterComponent } from "./register/register.component";
+import { HeaderComponent } from './home/header/header.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { RegisterComponent } from "./register/register.component";
     EventsComponent,
     ProfileComponent,
     OrdersComponent,
-    RegisterComponent
+    RegisterComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
