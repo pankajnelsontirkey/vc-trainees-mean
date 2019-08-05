@@ -1,7 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -18,24 +17,24 @@ import { EventComponent } from "./dashboard/events/event/event.component";
 import { EventDetailComponent } from "./dashboard/events/event/event-detail/event-detail.component";
 import { OrdersComponent } from "./dashboard/orders/orders.component";
 import { RegisterComponent } from "./register/register.component";
-import { HeaderComponent } from './home/header/header.component';
-import { FooterComponent } from './home/footer/footer.component';
+import { HeaderComponent } from "./home/header/header.component";
+import { FooterComponent } from "./home/footer/footer.component";
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     DashboardComponent,
     MenuComponent,
     ContentComponent,
     ViewComponent,
-    HomeComponent,
     NavigationComponent,
     OrderComponent,
     EventComponent,
     EventDetailComponent,
     ProfileComponent,
-    EventsComponent,
     ProfileComponent,
+    EventsComponent,
     OrdersComponent,
     RegisterComponent,
     HeaderComponent,
@@ -45,8 +44,8 @@ import { FooterComponent } from './home/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    ReactiveFormsModule
+    // HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
