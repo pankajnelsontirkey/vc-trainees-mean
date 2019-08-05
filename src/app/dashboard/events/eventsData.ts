@@ -1,4 +1,4 @@
-import { EventModel } from "../lib/eventModel";
+import { EventModel } from "../../lib/eventModel";
 
 export const EventList: EventModel[] = [
   {
