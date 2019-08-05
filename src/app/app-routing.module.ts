@@ -12,12 +12,13 @@ import { ProfileComponent } from "./dashboard/profile/profile.component";
 import { OrdersComponent } from "./dashboard/orders/orders.component";
 
 const routes: Routes = [
+  { path: "", redirectTo: "home" },
+  { path: "sum", redirectTo: "home" },
   { path: "home", component: HomeComponent },
   { path: "dashboard", component: DashboardComponent },
-  /* { path: "view", component: ViewComponent }, */
-  /*   { path: "navigation", component: NavigationComponent }, */
+  // { path: "view", component: ViewComponent },
+  // { path: "navigation", component: NavigationComponent },
   { path: "order", component: OrderComponent },
-  { path: "", component: HomeComponent },
   { path: "dashboard/events", component: EventsComponent },
   { path: "dashboard/profile", component: ProfileComponent },
   { path: "dashboard/orders", component: OrdersComponent }
