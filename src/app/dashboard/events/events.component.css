@@ -1,26 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-.eventsContainer {
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 30px auto 0px auto;
-}
-
-li {
-  list-style: none;
-}
-
-.eventsHeading {
-  text-align: center;
-}
-
-.eventsListContainer {
-  display: flex;
-  height: 90%;
-  width: 100%;
-
-  flex-direction: row;
-  flex-wrap: wrap;
+.bgimg {
+  background: url(https://img.glyphs.co/img?src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL2dlb21ldHJpYy1ncmFkaWVudC1iYWNrZ3JvdW5kLXR1dC1wb3N0LWltYWdlLmpwZz9tdGltZT0yMDE2MTExNTEwMzAzMg&q=85&enlarge=true&h=215&w=570);
 }

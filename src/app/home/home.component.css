@@ -1,16 +1,17 @@
-h1{
-  text-align: center;
-  color: blue;
-  font-size: 100px;
-  font-family: 'Anton', sans-serif;
-} 
+.bgimg {
+  background: url(https://img.glyphs.co/img?src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL2dlb21ldHJpYy1ncmFkaWVudC1iYWNrZ3JvdW5kLXR1dC1wb3N0LWltYWdlLmpwZz9tdGltZT0yMDE2MTExNTEwMzAzMg&q=85&enlarge=true&h=215&w=570);
+}
+h3 {
+  border-bottom: 3px solid gray;
+}
 
-#b{
-  margin: auto;
-  top:50%;
-  left:50%;
-  position: fixed;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-
+.body-content {
+  background-image: linear-gradient(
+    to right,
+    #f0eda3,
+    #ffe3ae,
+    #ffdcc1,
+    #ffdbd5,
+    #f9dde2
+  );
 }

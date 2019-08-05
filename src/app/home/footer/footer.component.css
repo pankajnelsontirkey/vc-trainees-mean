@@ -1,0 +1,23 @@
+#upper-heading-footer {
+  background: darkslategray;
+  font-size: 30px;
+  text-align: left;
+  padding: 10px 10px 10px 50px;
+  color: white;
+}
+.footer-content {
+  background: rgba(211, 211, 211, 0.5);
+}
+#moto {
+  font-size: 30px;
+  font-weight: 600;
+  color: royalblue;
+}
+h6 {
+  color: darkslategray;
+  font-size: 20px;
+}
+hr {
+  border-color: rgb(235, 179, 127);
+  width: 200px;
+}
