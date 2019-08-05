@@ -1,5 +1,81 @@
-<button>Click here to register as Individual</button>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-<button>Click here to register as Organizer</button>
+    <div class="mainDiv">
+        <div class="cardStyle">
+            <form [formGroup]="myform" id="signupForm">
 
-<router-outlet></router-outlet>
+                <img src="" id="signupLogo" />
+
+                <h2 class="formTitle">
+                    Create your account
+                </h2>
+
+                <div class="inputDiv">
+
+                    <label class="inputLabel" for="firstName">FirstName</label>
+                    <input type="text" id="firstName" formControlName="firstName" required>
+                    <div *ngIf="f.get('firstName').errors && f.get('firstName').touched && f.get('firstName').invalid">
+                        <span *ngIf="f.get('firstName').errors?.minlength">Enter min 4 characters</span>
+
+                    </div>
+
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="lastName">LastName</label>
+                    <input type="text" id="name" formControlName="lastName" required>
+
+                    <div *ngIf="f.get('lastName').errors && f.get('lastName').touched && f.get('lastName').invalid">
+                        <span *ngIf="f.get('lastName').errors?.minlength">Enter min 4 characters </span>
+                    </div>
+
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="mail">Email</label>
+                    <input type="email" name="mail" formControlName="email" #mail>
+
+
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="phone">Phone</label>
+                    <input type="number" id="phone" formControlName="phone" required>
+
+                    <div>
+
+                    </div>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="password">Password</label>
+                    <input type="password" id="password" formControlName="password" required>
+                    <div *ngIf="f.get('password').errors?.minlength">Min 6 characters</div>
+
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" formControlName="confirmPassword">
+                    <div *ngIf="f.get('confirmPassword').errors?.minlength">Min 6 characters</div>
+                    <span *ngIf="f.get('password').value !== f.get('confirmPassword').value">Passwords not equal</span>
+
+                </div>
+
+                <div class="buttonWrapper">
+                    <button type="submit" (click)="validateSignupForm()" [disabled]="myform.invalid" id="submitButton"
+                        class="signupButton pure-button pure-button-primary">
+                        <span>Signup</span>
+
+                    </button>
+                </div>
+                <div class="buttonWrapper">
+
+                    <button type="submit" (click)="FetchVal()" class="btn-btn-primary">Fetch entered values</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
