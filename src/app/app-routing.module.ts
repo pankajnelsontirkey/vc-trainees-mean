@@ -21,14 +21,16 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "admin", component: AdminComponent, canActivate: [AuthGuard] },
   { path: "dashboard", component: DashboardComponent },
+  /* { path: "view", component: ViewComponent }, */
+  { path: "", component: HomeComponent },
   { path: "dashboard/events", component: EventsComponent },
   { path: "dashboard/profile", component: ProfileComponent },
-  { path: "dashboard/orders", component: OrdersComponent },
-  { path: "order", component: OrderComponent }
+  { path: "dashboard/orders", component: OrdersComponent }
+  // { path: "order", component: OrderComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

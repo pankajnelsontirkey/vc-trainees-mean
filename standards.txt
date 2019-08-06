@@ -1,0 +1,3 @@
+#Angular
+Absolute imports ('@angular...) before relative ('./'...)
+app.module.ts - try to set component imports according to routes
