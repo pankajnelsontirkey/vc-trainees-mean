@@ -9,9 +9,6 @@ import { RegisterComponent } from "./register/register.component";
 import { LoginComponent } from "./login/login.component";
 import { AdminComponent } from "./admin/admin.component";
 import { HomeComponent } from "./home/home.component";
-import { HeaderComponent } from "./home/header/header.component";
-import { FooterComponent } from "./home/footer/footer.component";
-import { NavigationComponent } from "./navigation/navigation.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { MenuComponent } from "./menu/menu.component";
 import { ContentComponent } from "./dashboard/content/content.component";
@@ -21,6 +18,9 @@ import { EventComponent } from "./dashboard/events/event/event.component";
 import { EventDetailComponent } from "./dashboard/events/event/event-detail/event-detail.component";
 import { OrdersComponent } from "./dashboard/orders/orders.component";
 import { OrderComponent } from "./dashboard/orders/order/order.component";
+import { HeaderComponent } from "./home/header/header.component";
+import { FooterComponent } from "./home/footer/footer.component";
+import { NavigationComponent } from "./navigation/navigation.component";
 // import { ViewComponent } from "./view/view.component";
 
 @NgModule({
@@ -51,6 +51,8 @@ import { OrderComponent } from "./dashboard/orders/order/order.component";
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
+    // HeaderComponent,
+    // FooterComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

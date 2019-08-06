@@ -1,19 +1,49 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "firstName": "amanda ",
+      "lastName": "cerny",
+      "email": "amanda@cerny.com",
+      "phone": 9,
+      "password": "000000",
+      "confirmPassword": "000000",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "firstName": "sdad",
+      "lastName": "asdasd ",
+      "email": "asdfa@gmail.coma",
+      "phone": 111111111,
+      "password": "111111",
+      "confirmPassword": "111111",
+      "id": 2
+    },
+    {
+      "firstName": "aaaa",
+      "lastName": "aaaaa",
+      "email": "aaa@aa.aaa",
+      "phone": 8888888888,
+      "password": "password",
+      "confirmPassword": "password",
+      "id": 3
+    },
+    {
+      "firstName": "asfasf",
+      "lastName": "safdadfsadf",
+      "email": "sadfasdfasd@dsfsd.com",
+      "phone": 123123,
+      "password": "111111",
+      "confirmPassword": "111111",
+      "id": 4
+    },
+    {
+      "firstName": "Randhir",
+      "lastName": "aaaaa",
+      "email": "asdfa@gmail.com",
+      "phone": 1111111111,
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 5
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
