@@ -1,17 +1,19 @@
-<div class="container eventsContainer">
-  <div class="row eventsHeading">
-    <h1>Events</h1>
-  </div>
-  <div class="row eventsListContainer">
-    <div class="container">
-      <ul>
-        <li
-          *ngFor="let item of eventList"
-          class="eventItem col-xs-12 col-sm-6 col-md-4 col-lg-3"
-        >
+<!-- ################# MY CODE FOR ATTRACTIVE EVENTS VIEW #################### -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4" *ngFor="let item of eventList">
+      <div class="bgimg thumbnail">
+        <div class="caption">
           <app-event [eventItem]="item"></app-event>
-        </li>
-      </ul>
+          <a href="#" class="btn btn-primary" role="button"
+            ><span
+              class="glyphicon glyphicon-eye-open"
+              aria-hidden="true"
+            ></span>
+            View</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>
