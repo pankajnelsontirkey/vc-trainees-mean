@@ -1,0 +1,13 @@
+.menu
+{
+    display: inline-block;
+    border: 2px black solid;
+    height: 70vh;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+
+} 
