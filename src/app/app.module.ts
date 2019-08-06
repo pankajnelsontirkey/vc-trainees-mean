@@ -11,13 +11,14 @@ import { ContentComponent } from "./dashboard/content/content.component";
 import { ViewComponent } from "./view/view.component";
 import { HomeComponent } from "./home/home.component";
 import { NavigationComponent } from "./navigation/navigation.component";
-import { OrderComponent } from "./order/order.component";
 import { ProfileComponent } from "./dashboard/profile/profile.component";
 import { EventsComponent } from "./dashboard/events/events.component";
 import { EventComponent } from "./dashboard/events/event/event.component";
 import { EventDetailComponent } from "./dashboard/events/event/event-detail/event-detail.component";
 import { OrdersComponent } from "./dashboard/orders/orders.component";
 import { RegisterComponent } from "./register/register.component";
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +29,15 @@ import { RegisterComponent } from "./register/register.component";
     ViewComponent,
     HomeComponent,
     NavigationComponent,
-    OrderComponent,
     EventComponent,
     EventDetailComponent,
     ProfileComponent,
     EventsComponent,
     ProfileComponent,
     OrdersComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,9 @@ import { RegisterComponent } from "./register/register.component";
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
