@@ -1,0 +1,17 @@
+.bgimg {
+  background: url(https://img.glyphs.co/img?src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL2dlb21ldHJpYy1ncmFkaWVudC1iYWNrZ3JvdW5kLXR1dC1wb3N0LWltYWdlLmpwZz9tdGltZT0yMDE2MTExNTEwMzAzMg&q=85&enlarge=true&h=215&w=570);
+}
+h3 {
+  border-bottom: 3px solid gray;
+}
+
+.body-content {
+  background-image: linear-gradient(
+    to right,
+    #f0eda3,
+    #ffe3ae,
+    #ffdcc1,
+    #ffdbd5,
+    #f9dde2
+  );
+}
