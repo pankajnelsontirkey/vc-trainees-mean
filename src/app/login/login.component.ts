@@ -31,7 +31,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.loginForm.value);
+    // console.log(this.loginForm.value);
+    /* HTTP Request from users db to check username/password */
     this.isSubmitted = true;
     if (this.loginForm.invalid) {
       return;
@@ -40,6 +41,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.loginForm.value);
     this.router.navigateByUrl("/admin");
   }
+
   CheckLogin() {
     var mail = (<HTMLInputElement>document.getElementById("email")).value;
     var pass = (<HTMLInputElement>document.getElementById("password")).value;
