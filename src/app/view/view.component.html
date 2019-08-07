@@ -1,0 +1,14 @@
+
+  <table>
+    <td>Id</td>
+    <td>Name</td>
+    <td>Age</td>
+    <div *ngFor="let p of persons">
+    <tr >{{p.id}}</tr>
+    <tr >{{p.name}}</tr>
+    <tr >{{p.age}}</tr>
+    </div>
+    </table>
+<button (click)="displayUsers()"> Display</button>
+<button (click)="deleteUser()"> Delete</button>
+<button (click)="postUser()"> Update</button>
