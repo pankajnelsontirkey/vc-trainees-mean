@@ -10,8 +10,6 @@ export class ApiService {
 
 
   signUpFetch(): Observable<any> {
-
-
     return this.http.get(this.link + '/users')
   }
 

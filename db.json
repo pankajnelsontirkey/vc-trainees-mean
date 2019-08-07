@@ -12,7 +12,7 @@
     {
       "firstName": "sdad",
       "lastName": "asdasd ",
-      "email": "asdfa@gmail.coma",
+      "email": "asdfa@gmail.com",
       "phone": 111111111,
       "password": "111111",
       "confirmPassword": "111111",
@@ -44,6 +44,33 @@
       "password": "123456",
       "confirmPassword": "123456",
       "id": 5
+    },
+    {
+      "firstName": "aaaa",
+      "lastName": "aaaa",
+      "email": "a@a.cm",
+      "phone": 1234567890,
+      "password": "aaaaaa",
+      "confirmPassword": "aaaaaa",
+      "id": 6
+    },
+    {
+      "firstName": "India",
+      "lastName": "india",
+      "email": "india@india.com",
+      "phone": 9000000000,
+      "password": "india123",
+      "confirmPassword": "india123",
+      "id": 7
+    },
+    {
+      "firstName": "Apoorva",
+      "lastName": "thakur",
+      "email": "apporva@gmail.com",
+      "phone": 9999999999,
+      "password": "9999999999",
+      "confirmPassword": "9999999999",
+      "id": 8
     }
   ]
 }
