@@ -15,6 +15,7 @@ import { OrdersComponent } from "./dashboard/orders/orders.component";
 import { RegisterComponent } from "./register/register.component";
 import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { ForgotComponent } from './register/forgot/forgot.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './home/footer/footer.component';
     OrdersComponent,
     RegisterComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ForgotComponent
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule, HttpClientModule],
   providers: [],

@@ -2,6 +2,7 @@ import { Component, OnInit, createPlatformFactory } from '@angular/core';
 import { FormBuilder, FormGroup, Validator, Validators, RequiredValidator, FormControl } from '@angular/forms';
 // import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../api.service';
+import { Router } from '@angular/router';
 
 
 
@@ -15,12 +16,13 @@ export class RegisterComponent implements OnInit {
   myform: FormGroup;
   user: any = {}
 
-  constructor(private fb: FormBuilder, private api: ApiService) {
+  constructor(private fb: FormBuilder, private api: ApiService, public router: Router) {
   }
 
   ngOnInit() {
 
     this.formval();
+
 
 
   }
@@ -30,10 +32,9 @@ export class RegisterComponent implements OnInit {
       firstName: ['', [Validators.required, Validators.minLength(4)]],
       lastName: ['', [Validators.required, Validators.minLength(4)]],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', [Validators.required, Validators.maxLength(10), Validators.minLength(10)]],
+      phone: ['', [Validators.required, Validators.min(6000000000), Validators.max(9999999999)]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', [Validators.required, Validators.minLength(6)]]
-
 
 
     });
@@ -42,16 +43,24 @@ export class RegisterComponent implements OnInit {
 
 
   validateSignupForm() {
+    if (this.myform.valid) {
 
-    this.api.signUpGet(this.myform.value).subscribe(
-      data => {
-        console.log(data)
-        window.alert("Registeration Successful")
-        this.user = data;
-      },
-      err => {
-        console.log(err)
-      });
+
+      this.api.signUpGet(this.myform.value).subscribe(
+        data => {
+          console.log(data)
+          window.alert("Registeration Successful")
+          this.user = data;
+        },
+        err => {
+          console.log(err)
+        });
+
+
+    }
+    else {
+      window.alert("Please fill all the fields ")
+    }
 
   }
 
@@ -68,14 +77,9 @@ export class RegisterComponent implements OnInit {
       });
   }
 
-
-  get f() {
-    return this.myform;
+  Navigate() {
+    this.router.navigate(['/forgot'])
   }
-
-
-
-
 
 
 }

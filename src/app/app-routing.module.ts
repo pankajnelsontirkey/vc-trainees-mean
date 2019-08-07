@@ -6,6 +6,8 @@ import { EventsComponent } from "./dashboard/events/events.component";
 import { ProfileComponent } from "./dashboard/profile/profile.component";
 import { OrdersComponent } from "./dashboard/orders/orders.component";
 import { RegisterComponent } from "./register/register.component";
+import { ForgotComponent } from './register/forgot/forgot.component';
+// import {}  from "./register/"
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -14,7 +16,9 @@ const routes: Routes = [
   { path: "dashboard/events", component: EventsComponent },
   { path: "dashboard/profile", component: ProfileComponent },
   { path: "dashboard/orders", component: OrdersComponent },
-  { path: "register", component: RegisterComponent }
+  { path: "register", component: RegisterComponent },
+  // { path: "login", component: LoginComponent },
+  { path: "forgot", component: ForgotComponent }
 ];
 
 @NgModule({
