@@ -44,6 +44,24 @@
       "password": "123456",
       "confirmPassword": "123456",
       "id": 5
+    },
+    {
+      "firstName": "sandeep",
+      "lastName": "sarswat",
+      "email": "sandeep@vinove.com",
+      "phone": 9582901521,
+      "password": "sandeep",
+      "confirmPassword": "sandeeo",
+      "id": 6
+    },
+    {
+      "firstName": "pankaj",
+      "lastName": "tikrey",
+      "email": "pankaj@vinove.com",
+      "phone": 9898989898,
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 7
     }
   ]
 }
